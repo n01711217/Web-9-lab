@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+    <section class="filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="houses">Houses</button>
+        <button class="filter-btn" data-category="cars">Cars</button>
+        <button class="filter-btn" data-category="ocean">Ocean</button>
+    </section>
+    <section class="gallery">
+        <div class="gallery-item" data-category="houses"><img src="house1.jpeg" alt="House 1" title="House 1"></div>
+        <div class="gallery-item" data-category="houses"><img src="house2.jpeg" alt="House 2" title="House 2"></div>
+        <div class="gallery-item" data-category="houses"><img src="house3.jpeg" alt="House 3" title="House 3"></div>
+        <div class="gallery-item" data-category="houses"><img src="house4.jpeg" alt="House 4" title="House 4"></div>
+        <div class="gallery-item" data-category="houses"><img src="5" alt="House 5" title="House 5"></div>
+        <div class="gallery-item" data-category="cars"><img src="car1.jpeg" alt="Car 1" title="Car 1"></div>
+        <div class="gallery-item" data-category="cars"><img src="car2.jpeg" alt="Car 2" title="Car 2"></div>
+        <div class="gallery-item" data-category="cars"><img src="car3.jpeg" alt="Car 3" title="Car 3"></div>
+        <div class="gallery-item" data-category="cars"><img src="car4.jpeg" alt="Car 4" title="Car 4"></div>
+        <div class="gallery-item" data-category="cars"><img src="car5.jpeg" alt="Car 5" title="Car 5"></div>
+        <div class="gallery-item" data-category="ocean"><img src="ocean1.jpeg" alt="Ocean 1" title="Ocean 1"></div>
+        <div class="gallery-item" data-category="ocean"><img src="ocean2.jpeg" alt="Ocean 2" title="Ocean 2"></div>
+        <div class="gallery-item" data-category="ocean"><img src="ocean3.jpeg" alt="Ocean 3" title="Ocean 3"></div>
+    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+   
+</body>
+</html>
